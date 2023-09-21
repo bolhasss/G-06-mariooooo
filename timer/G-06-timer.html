@@ -1,0 +1,113 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Página de apresentação de trabalhos G-06</title>
+  <link rel="stylesheet" href="./G-06-timer.css">
+  <link rel="shortcut icon" href="../!images/cep_logo.png" type="image/x-icon">
+  <link rel="shortcut icon" href="../favicon.png" type="image/x-icon">
+</head>
+<body>
+  <header class="cabecalho">
+
+    <div class="logo-title">
+        <img class="cabecalho-imagem" src="../!images/cep_logo.png" alt="Logo da Escola">
+        <h1>timer</h1>
+    </div>
+    
+    <div class="cabecalho-menu">
+      <ul class="cabecalho-lista">
+        <li class="cabecalho-lista-item"><a href="../G-06-main.html">Voltar -> Main page</a></li>
+        <li class="dropdown">
+          <a href="javascript:void(0)" class="dropbtn">trabalhos</a>
+          <div class="dropdown-content">
+            <a target="_blank" href="../push-button_led_circuit/G-06-pushbutton-led_circuit.html">Push button</a>
+            <a target="_blank" href="../traffic-light_circuit/G-06-trafficlight_circuit.html">Trafic Light</a>
+            <a target="_blank" href="../megasemaforo/G-06-megasemaforo.html">Mega-semáforo</a>
+            <a target="_blank" href="../potenciometro/G-06-potenciometro.html">Potenciometro</a>
+            <a target="_blank" href="../centraldesegurança/G-06-cds.html">CDS</a>
+            <a target="_blank" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Em breve...</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+      <section id="Introdução">
+        <div class="corpo-div-conteudo">
+          <h2 class="corpo-titulo">Introdução</h2>
+          <p class="paragrafo-um">
+            Nossa prática realizada no dia 30/07/2023, foi uma montagem de um timer, onde era para programar um contador que varia de 0 a 9999 com o dispositivo
+            módulo display de 7 segmentos com 4 dígitos.
+            <ul>
+              <li>1 placa de Arduino;</li>
+              <li>1 módulo display 7 segmentos com 4 dígitos;</li>
+              <li>4 jumpers macho-fêmea;</li>
+              <li>1 notebook;</li>
+              <li>Software Arduino IDE;</li>
+              <li>Software mBlock.</li>
+            </ul>           
+        </p>
+        </div>
+      </section>
+      <section id="Trabalho" class="trabalho">
+        <div class="corpo-div-conteudo">
+          <h2 class="corpo-titulo">A Montagem</h2>
+          
+          <div class="image-box">
+            <img class="phoyo" src="./foto.jpg" alt="foto">
+          </div>
+          <p class="paragrafo-um">Logo abaixo segue os passos a serem tomados para se montar esse circuito:</p>
+          <ul>
+            <li>Ligue com dois jumpers macho-fêmea os pinos
+              GND e 5V da placa Arduino aos pinos GND e VCC do display 7 segmentos,
+              respectivamente.</li>
+            <li>Utilizando outros 2 jumpers macho-fêmea, conecte o pino CLK do
+              módulo display à porta analógica A4 do Arduino e o pino DIO à porta analógica
+              A5. Esse módulo aceita qualquer porta digital ou analógica para a
+              programação.</li>
+            <li>Com os componentes eletrônicos montados, vamos programar, por có-
+              digo e por blocos, o display de 7 Segmentos com 4 dígitos para que atue
+              como um contador representando valores de 0 a 9999.</li>
+
+            
+              Segue então o código utilizado para os comandos do timer:
+            <div class="code">
+              <img class="code" src="./codebiax.png" alt="Logo da Escola">
+              </div>
+            <li>Após a transferência do programa para o Arduino, o contador iniciará
+              sua operação, conforme comando estabelecidos na programação.</li>
+          </ul>
+          <ul>Ele é utilizado em projetos com Arduino ou outras plataformas microcontroladas em que seja necessário controlar volume, controle de brilho em displays LCD ou controlar servo motores.</ul>
+
+        </div>
+
+        
+      </section>
+      
+      <section id="Conclusão">
+        <div class="corpo-div-conteudo">
+          <h2 class="corpo-titulo">Resultado final</h2>
+          <div class="video-box">
+              <h3 class="paragrafo-um">Olhe o vídeo do resultado final logo abaixo:</h3>
+              <video width="500px" controls>
+                <source src="./vidrovido.mp4" type="video/mp4">
+                Your browser does not support the video tag. Tradução: seu navegador é uma merda, mermão!!
+              </video>
+          </div>  
+        </div>
+      </section>
+  </main>
+
+  <footer class="roda-pe">
+    <p class="fim">Trabalho desenvolvido na disciplina de programação</p>
+    <div class="meio">
+      <img class="roda-pe-imagem" src="../!images/cep_logo.png" alt="Logo">
+      <p class="roda-pe-texto">Colégio Estadual do Paraná</p>
+    </div>
+  </footer>
+</body>
+</html>

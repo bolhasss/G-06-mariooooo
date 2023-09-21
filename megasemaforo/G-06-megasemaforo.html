@@ -1,0 +1,116 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./G-06-megasemaforo.css">
+  <link rel="shortcut icon" href="../!images/cep_logo.png" type="image/x-icon">
+  <link rel="shortcut icon" href="../favicon.png" type="image/x-icon">
+  <title>Mega-semáfaro</title>
+</head>
+<body>
+  <header class="cabecalho">
+
+    <div class="logo-title">
+        <img class="cabecalho-imagem" src="../!images/cep_logo.png" alt="Logo da Escola">
+        <h1>Mega semáforo</h1>
+    </div>
+    
+    <div class="cabecalho-menu">
+      <ul class="cabecalho-lista">
+        <li class="cabecalho-lista-item"><a href="../G-06-main.html">Voltar -> Main page</a></li>
+        <li class="dropdown">
+          <a href="javascript:void(0)" class="dropbtn">Projetos</a>
+          <div class="dropdown-content">
+            <a target="_blank" href="../push-button_led_circuit/G-06-pushbutton-led_circuit.html">Push button</a>
+            <a target="_blank" href="../traffic-light_circuit/G-06-trafficlight_circuit.html">Trafic Light</a>
+            <a target="_blank" href="../potenciometro/G-06-potenciometro.html">Potenciometro</a>
+            <a target="_blank" href="../timer/G-06-timer.html">Timer</a>
+            <a target="_blank" href="../centraldesegurança/G-06-cds.html">CDS</a>
+            <a target="_blank" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Em breve...</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+      <section id="Introdução">
+        <div class="corpo-div-conteudo">
+          <h2 class="corpo-titulo">Introdução</h2>
+          <p class="paragrafo-um">
+            Nossa prática realizada no dia 30/06/2023, foi uma montagem de um semáforo com um botão e buzzer, onde utilizamos os seguintes componentes:
+            <ul>
+                <li>Arduino;</li>
+                <li>Protoboard;</li>
+                <li>5 LEDs com 5 resistores de 330 Ω;</li>
+                <li>1 botão com 1 resistor de 1 kΩ;</li>
+                <li>1 Buzzer com 1 resistor de 330 Ω;</li>
+                <li>Jumpers.</li>
+            </ul>           
+        </p>
+        </div>
+      </section>
+      <section id="Trabalho" class="trabalho">
+        <div class="corpo-div-conteudo">
+          <h2 class="corpo-titulo">A Montagem</h2>
+          
+          <div class="image-box">
+            <img class="phoyo" src="../!images/mega.jpg" alt="mega">
+            <img class="phoyo" src="../!images/semafro.jpg" alt="semaforo">
+          </div>
+          
+          <p class="paragrafo-um">Logo abaixo segue os passos a serem tomados para se montar esse circuito:</p>
+          <ul>
+            <li>0. Coloque o LED junto com o resistor correspondente (ambos 330 Ω) na protoboard. Certifique-se de conectar o LED ao ponto correto e conectar o negativo ao resistor e o resistor ao negativo/terra. No lado positivo do LED, conectamos um fio a uma porta digital no Arduino (posteriormente)</li>
+            <li>1. Se houver uma campainha, ligue-a depois que as luzes acenderem. Conecte um resistor de 300 Ω ao terminal negativo da campainha e conecte esse resistor ao terminal negativo, assim como o LED
+              Agora coloque semáforos (vermelho e verde) para pedestres como você fez para semáforos de carros (coloque LEDs e resistores)</li>
+            <li>2. Agora coloque semáforos (vermelho e verde) para pedestres como você fez para semáforos de carros (coloque LEDs e resistores)</li>
+            <li>3. Agora, da esquerda para a direita: 3 LEDs (vermelho, amarelo e verde) para carros, uma campainha (opcional) e 2 LEDs (vermelho e verde) para pedestres. Atrás do semáforo de pedestres, coloque o botão e conecte um resistor de 1 kΩ a uma das pernas, que por sua vez se conecta ao terminal negativo. Conecte a outra perna diagonalmente ao terminal positivo (5V) da protoboard
+            </li>
+            <p> Agora vamos conectar os fios que controlam os semáforos às portas digitais do Arduino. Vamos juntar da esquerda para a direita: </p>
+            <li>4. Do LED vermelho positivo do semáforo de carros, conecte um fio à porta digital 13</li>
+            <li>5. No lado positivo do LED amarelo, conecte um fio à porta digital 12</li>
+            <li>6. No lado positivo do LED verde, conecte um fio à porta digital 11</li>
+            <li>7. Se estiver usando o buzzer, conecte o fio positivo da campainha à porta digital 7</li>
+            <li>8. Conecte um fio de uma perna do botão (entre os resistores) e conecte a outra extremidade à porta digital 4</li>
+            <li>9. Agora, para o LED vermelho pedestre, no lado positivo, conecte o fio à porta digital 6</li>
+            <li>10. Finalmente, para o LED verde, conecte um fio da perna lateral positiva à porta digital 5</li>
+            <li>11. Concluímos a vinculação de componentes. Agora você precisa conectar o lado positivo da protoboard à porta 5V do Arduino e o lado negativo da protoboard a uma das portas GND do Arduino (terra/negativo)</li>
+          </ul>
+
+          <p>Agora segue a foto da montagem no tinkercad e o bloco de texto que fazem a montagem funcionar:</p>
+          <div class="image-box" >
+          <img class="phoyo" src="../!images/tinkercad.png" alt="tinkercad">
+          <img class="phoyo" src="../!images/texto.png" alt="texto do código em c++">
+        </div>
+        </div>
+
+        
+      </section>
+      
+      <section id="Conclusão">
+        <div class="corpo-div-conteudo">
+          <h2 class="corpo-titulo">O resultado final</h2>
+          <div class="video-box">
+              <h3 class="paragrafo-um">Olhe o vídeo do resultado final logo abaixo:</h3>
+              <video width="500px" controls>
+                <source src="../!videos/megasem.mp4" type="video/mp4">
+                Your browser does not support the video tag. Tradução: seu navegador é uma merda, mermão!!
+              </video>                        
+          </div>  
+          <p class="aviso">PS.: Circuito montado no contra turno junto com um membro da equipe 01.</p>
+        </div>
+      </section>
+  </main>
+
+  <footer class="roda-pe">
+    <p class="fim">Trabalho desenvolvido na disciplina de programação</p>
+    <div class="meio">
+      <img class="roda-pe-imagem" src="../!images/cep_logo.png" alt="Logo">
+      <p class="roda-pe-texto">Colégio Estadual do Paraná</p>
+    </div>
+  </footer>
+</body>
+</html>

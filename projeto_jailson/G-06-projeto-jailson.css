@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body {
+  margin: 0;
+  font-size: 1.5rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+main {
+  margin: 0 2rem;
+}
+
+.alunos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #94cdab;
+  padding: 2rem;
+}
+
+.aluno-imagem {
+  border-radius: 0.5rem;
+  width: 20rem;
+  height: 20rem;
+} 
+
+.aluno {
+  background: #90e379;
+  border: .25rem solid #36772a;
+  border-radius: .5rem;
+  padding: .5rem;
+  margin: 0 .5rem;
+  transition: .5s;
+}
+
+.aluno:hover {
+  scale: 1.04;
+  border: .3rem solid #f9f9f9;
+  background-color: #8ef073;
+}
+
+.aluno p {
+  text-align: center;
+}
+
+.conteudo {
+  display: flex;
+  justify-content: space-around;
+  background-color: #788acf;
+  padding: 15px;
+  gap: 10px;
+}
+
+.cabecalho-imagem {
+  width: 8rem;
+  height: 8rem;
+  margin: 1rem;
+}
+
+.logo-title {
+  display: flex;
+  align-items: center;
+}
+
+.logo-title h1 {
+  color: #f1f1f1;
+  font-weight: bold;
+}
+
+.cabecalho {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-image: linear-gradient(90deg, rgb(90, 16, 16), rgb(85, 85, 19), rgb(17, 70, 17));
+  padding: 2.5rem;
+}
+
+.cabecalho-menu {
+  background: #b39029;
+  border: 3px solid #eebd74;
+  border-radius: .5rem;
+  padding: 18px;
+  align-items: center;
+}
+
+.cabecalho-menu li {
+  list-style: none;
+}
+
+.circuito-botao-led {
+  width: 50%;
+}
+
+li a,
+.dropbtn {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover,
+.dropdown:hover .dropbtn {
+  background-color: #000;
+}
+
+li.dropdown {
+  display: inline-block;
+  font-size: 20px;
+  padding: 15px 0px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+#corpo {
+  background-color: #1a1f30;
+  color: white;
+  padding: 30px 0;
+  padding-top: 100px;
+}
+
+.roda-pe {
+  background-color: black;
+  justify-content: center;
+  padding: 1rem 2rem 2rem 1rem;
+}
+
+.roda-pe-imagem {
+  width: 3rem;
+  border-radius: 50%;
+  padding: 0 2rem;
+}
+
+.roda-pe-texto {
+  margin: 10px 0px 5px 0px;
+  color: white;
+}
+
+.fim {
+  text-align: center;
+  color: white;
+  line-height: 2.5;
+}
+
+.meio {
+  display: flex;
+  justify-content: center;
+}
+
+.trabalho {
+  display: inline;
+}
+
+.circuito-botao-led {
+  border-radius: .5rem;
+}
+ 
+.image-box img {
+  width: 38rem;
+  height: 38rem;
+  border-radius: .5rem;
+}
+
+.video-box {
+  text-align: center;
+  border-radius: .5rem;
+  background-color: #0d2e4f;
+  padding: 2rem;
+  margin: 2rem 0;
+}
+
+.video-box h3 {
+  color: #fff;
+}
+
+.video-box video{
+  width: 50%;
+  max-height: 400px;
+  object-fit: cover;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.image-box {
+  display: flex;
+  justify-content: space-between;
+}

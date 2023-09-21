@@ -1,0 +1,97 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Página de apresentação de trabalhos G-06</title>
+  <link rel="stylesheet" href="G-06.css">
+  <link rel="shortcut icon" href="./!images/cep_logo.png" type="image/x-icon">
+  <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+</head>
+<body>
+
+  <header class="cabecalho">
+    <div class="logo-title">
+      <img class="cabecalho-imagem" src="./!images/cep_logo.png" alt="Logo da Escola">
+      <h1>Equipe 6</h1>
+    </div>
+    <div class="cabecalho-menu">
+      <ul class="cabecalho-lista">
+        <li class="cabecalho-lista-item">Main Page</li>
+        <li class="dropdown">
+          <a href="javascript:void(0)" class="dropbtn">Os nosso projetos</a>
+          <div class="dropdown-content">
+            <a target="_blank" href="./push-button_led_circuit/G-06-pushbutton-led_circuit.html">Push button</a>
+            <a target="_blank" href="./traffic-light_circuit/G-06-trafficlight_circuit.html">Trafic Light</a>
+            <a target="_blank" href="./megasemaforo/G-06-megasemaforo.html">Mega-semáforo</a>
+            <a target="_blank" href="./potenciometro/G-06-potenciometro.html">Potenciometro</a>
+            <a target="_blank" href="./timer/G-06-timer.html">Timer</a>
+            <a target="_blank" href="./centraldesegurança/G-06-cds.html">CDS</a>
+            <a target="_blank" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Em breve...</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </header>
+
+  <div class="conteudo">
+
+<div class="slide-show" >
+  <div class="buttons">
+    <input type="radio" class="slide-controller" name="slide"  onclick="image00()"/>
+    <input type="radio" class="slide-controller" name="slide"  onclick="image01()"/>
+    <input type="radio" class="slide-controller" name="slide"  onclick="image02()"/>
+    <input type="radio" class="slide-controller" name="slide"  onclick="image03()"/>
+  </div>  
+  
+  <div>
+      <img class="slide" id="image00" src="./!images/pinkman.jpeg">
+      <img class="slide" id="image01" src="./!images/mega.jpg">
+      <img class="slide" id="image02" src="./!images/jailson-1.png">
+      <img class="slide" id="image03" src="./!images/lucas.jpg">
+    </div>
+</div>
+
+    <div class="texto">
+      <p>Nosso grupo é constituído de:</p>
+      <ul>
+         <li>Cauã</li>
+         <li>Lucas</li>
+         <li>Gabriela</li>
+         <li>Aluan</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="alunos">
+    <div class="aluno caua">
+      <img class="aluno-imagem" src="./!images/caua.jpg" alt="Imagem do aluno Cauã">
+      <p>Cauã</p>
+    </div>
+    <div class="aluno lucas">
+      <img class="aluno-imagem" src="./!images/lucas.jpg" alt="Imagem do aluno Lucas">
+      <p>Lucas Neto</p>
+    </div>
+    <div class="aluno gabi">
+      <img class="aluno-imagem" src="./!images/gabriela.jpg" alt="Imagem da aluna Gabriela">
+      <p>Gabriela</p>
+    </div>
+    <div class="aluno aluan">
+      <img class="aluno-imagem" src="./!images/aluan.png" alt="Imagem do aluno Aluan">
+      <p>Aluan</p>
+    </div>
+  </div>
+
+  <footer class="roda-pe">
+    <p class="fim">Trabalho desenvolvido na disciplina de programação</p>
+    <div class="meio">
+      <img class="roda-pe-imagem" src="./!images/cep_logo.png" alt="Logo">
+      <p class="roda-pe-texto">Power Guido Corp.</p>
+    </div>
+  </footer>
+  
+  <script src="./script.js"></script>
+
+</body>
+</html>

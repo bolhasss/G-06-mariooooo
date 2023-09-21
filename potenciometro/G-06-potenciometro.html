@@ -1,0 +1,108 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Página de apresentação de trabalhos G-06</title>
+  <link rel="stylesheet" href="./G-06-potenciometro.css">
+  <link rel="shortcut icon" href="../!images/cep_logo.png" type="image/x-icon">
+  <link rel="shortcut icon" href="../favicon.png" type="image/x-icon">
+</head>
+<body>
+  <header class="cabecalho">
+
+    <div class="logo-title">
+        <img class="cabecalho-imagem" src="../!images/cep_logo.png" alt="Logo da Escola">
+        <h1>potenciômetro</h1>
+    </div>
+    
+    <div class="cabecalho-menu">
+      <ul class="cabecalho-lista">
+        <li class="cabecalho-lista-item"><a href="../G-06-main.html">Voltar -> Main page</a></li>
+        <li class="dropdown">
+          <a href="javascript:void(0)" class="dropbtn">trabalhos</a>
+          <div class="dropdown-content">
+            <a target="_blank" href="../push-button_led_circuit/G-06-pushbutton-led_circuit.html">Push button</a>
+            <a target="_blank" href="../traffic-light_circuit/G-06-trafficlight_circuit.html">Trafic Light</a>
+            <a target="_blank" href="../megasemaforo/G-06-megasemaforo.html">Mega-semáforo</a>
+            <a target="_blank" href="../timer/G-06-timer.html">Timer</a>
+            <a target="_blank" href="../centraldesegurança/G-06-cds.html">CDS</a>
+            <a target="_blank" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Em breve...</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+      <section id="Introdução">
+        <div class="corpo-div-conteudo">
+          <h2 class="corpo-titulo">Introdução</h2>
+          <p class="paragrafo-um">
+            Nossa prática realizada no dia 26/07/2023, foi uma montagem de um potenciômetro, sendo que um potenciômetro é um componente eletrônico cuja função é variar a resistência. Como um resistor, um potenciômetro impõe resistência em um circuito, mas essa resistência pode ser alterada manualmente, algo que não pode ser feito com um resistor que já possui um valor de resistência fixo. A resistência do potenciômetro também é medida em ohms. Existem muitos valores de potenciômetros no mercado, mas o mais comum é 10K (faixa de resistência de 0 a 10000 ohms). Utilizamos os seguintes componentes:
+            <ul>
+                <li>Arduino;</li>
+                <li>Protoboard;</li>
+                <li>01 Potenciômetro 10K ohms;</li>
+                <li>03 Jumpers Macho-Macho;</li>
+                <li>01 Cabo USB;</li>
+                <li>01 Notebook;</li>
+                <li>Software Arduino IDE ou mBlock.</li>
+            </ul>           
+        </p>
+        </div>
+      </section>
+      <section id="Trabalho" class="trabalho">
+        <div class="corpo-div-conteudo">
+          <h2 class="corpo-titulo">A Montagem</h2>
+          
+          <div class="image-box">
+            <img class="phoyo" src="./code.png" alt="code">
+            <img class="phoyo" src="./pot1.jpg" alt="potenciometro1">
+          </div>
+          
+          <p class="paragrafo-um">Logo abaixo segue os passos a serem tomados para se montar esse circuito:</p>
+          <ul>
+            <li>0. O primeiro passo é montar os componentes eletrônicos.</li>
+            <li>1. Conecte o potenciômetro na protoboard.</li>
+            <li>2. A conexão do potenciômetro à placa Arduino Uno será feita através de 3 jumpers macho para macho.</li>
+            <li>3. Conecte o fio 1 jumper no terminal direito do potenciômetro ao pino 5V da placa Arduino Uno.</li>
+            <li>4. Usando outro fio jumper, conecte o terminal esquerdo do potenciômetro ao pino GND do Arduino.</li>
+            <li>5. Por fim, conecte o terminal central (lado móvel) do potenciômetro à porta analógica A0 da placa do microcontrolador com o auxílio de outro jumper.</li>
+          </ul>
+          <ul>Ele é utilizado em projetos com Arduino ou outras plataformas microcontroladas em que seja necessário controlar volume, controle de brilho em displays LCD ou controlar servo motores.</ul>
+
+          <p>Agora segue as fotos da folha com os conteúdos passados na aula:</p>
+          <div class="image-box" >
+          <img class="phoyo" src="./folha1.jpg" alt="folhafrente">
+          <img class="phoyo" src="./folha2.jpg" alt="folhaverso">
+        </div>
+        </div>
+
+        
+      </section>
+      
+      <section id="Conclusão">
+        <div class="corpo-div-conteudo">
+          <h2 class="corpo-titulo">Resultado final</h2>
+          <div class="video-box">
+              <h3 class="paragrafo-um">Olhe o vídeo do resultado final logo abaixo:</h3>
+              <video width="500px" controls>
+                <source src="./video1.mp4" type="video/mp4">
+                Your browser does not support the video tag. Tradução: seu navegador é uma merda, mermão!!
+              </video>
+          </div>  
+        </div>
+      </section>
+  </main>
+
+  <footer class="roda-pe">
+    <p class="fim">Trabalho desenvolvido na disciplina de programação</p>
+    <div class="meio">
+      <img class="roda-pe-imagem" src="../!images/cep_logo.png" alt="Logo">
+      <p class="roda-pe-texto">Colégio Estadual do Paraná</p>
+    </div>
+  </footer>
+</body>
+</html>

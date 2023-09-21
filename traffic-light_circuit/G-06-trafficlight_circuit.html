@@ -1,0 +1,106 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./G-06-trafficlight_circuit.css">
+  <link rel="shortcut icon" href="../!images/cep_logo.png" type="image/x-icon">
+  <link rel="shortcut icon" href="../favicon.png" type="image/x-icon">
+  <title>Traffic Light (Semáfaro)</title>
+</head>
+<body>
+  <header class="cabecalho">
+
+    <div class="logo-title">
+        <img class="cabecalho-imagem" src="../!images/cep_logo.png" alt="Logo da Escola">
+        <h1>O semáforo (standard edition)</h1>
+    </div>
+    
+    <div class="cabecalho-menu">
+      <ul class="cabecalho-lista">
+        <li class="cabecalho-lista-item"><a href="../G-06-main.html">Voltar -> Main page</a></li>
+        <li class="dropdown">
+          <a href="javascript:void(0)" class="dropbtn">Projetos</a>
+          <div class="dropdown-content">
+            <a target="_blank" href="../push-button_led_circuit/G-06-pushbutton-led_circuit.html">Push button</a>
+            <a target="_blank" href="../megasemaforo/G-06-megasemaforo.html">Mega-semáforo</a>
+            <a target="_blank" href="../potenciometro/G-06-potenciometro.html">Potenciometro</a>
+            <a target="_blank" href="../timer/G-06-timer.html">Timer</a>
+            <a target="_blank" href="../centraldesegurança/G-06-cds.html">CDS</a>
+            <a target="_blank" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Em breve...</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+      <section id="Introdução">
+        <div class="corpo-div-conteudo">
+          <h2 class="corpo-titulo">Introdução</h2>
+          <p class="paragrafo-um">
+            Nossa prática realizada no dia 14/04/2023, foi uma montagem de dois semáforos, pedestre e carro, onde utilizamos os seguintes componentes:
+            <ul>
+                <li>arduino;</li>
+                <li>protoboard;</li>
+                <li>resistores;</li>
+                <li>LEDs (2 verdes, 2 vermelhos, 1 amarelo);</li>
+                <li>jumpers;</li>
+                <li>bateria (laptop).</li>
+            </ul>           
+            Foi montado cuidadosamente para que não ocorresse nenhum erro.
+        </p>
+        </div>
+      </section>
+      <section id="Trabalho" class="trabalho">
+        <div class="corpo-div-conteudo">
+          <h2 class="corpo-titulo">A Montagem</h2>
+          
+          <div class="image-box">
+            <img class="phoyo" src="../!images/trafficlight_tinkercad.jpg" alt="Imagem cartonizada do circuito botão-led">
+            <img class="phoyo" src="../!images/trafficlight_pic.jpg" alt="Foto do circuito semáforo">
+          </div>
+          
+          <p class="paragrafo-um">Logo abaixo segue os principais passos a serem tomados para se montar esse circuito:</p>
+          <ul>
+            <li>0. Unir materiais: arduino, protoboard, resistores, LEDs (2 verdes, 2 vermelhos, 1 amarelo), jumpers e uma bateria de laptop.</li>
+            <li>1. Conecte o Arduino à protoboard.</li>        
+            <li>2. Colocar os resistores na protoboard.</li>      
+            <li>3. Conecte os LEDs à protoboard, utilizando um resistor em série com cada LED.</li>      
+            <li>4. Conecte os jumpers para fazer as conexões necessárias.</li>       
+            <li>5. Conecte a bateria de laptop ao Arduino para fornecer energia.</li>        
+            <li>6. Carregar o código no Arduino usando o Arduino Create for Education.</li>     
+            <li>7. Testar o semáforo para verificar se os LEDs acendem e apagam corretamente.</li>
+          </ul>
+
+          <p>Agora segue a foto do código (uma parte é em blocos, a outra em linguagem C++) que faz esse trem funcionar:</p>
+          <img src="../!images/code-traffic_light.jpg" alt="Imagem do código">
+        </div>
+
+        
+      </section>
+      
+      <section id="Conclusão">
+        <div class="corpo-div-conteudo">
+          <h2 class="corpo-titulo">Resultado final</h2>
+          <div class="video-box">
+              <h3 class="paragrafo-um">Olhe o vídeo do resultado final logo abaixo:</h3>
+              <video width="500px" controls>
+                <source src="../!videos/trafficlight_demo.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+          </div>  
+        </div>
+      </section>
+  </main>
+
+  <footer class="roda-pe">
+    <p class="fim">Trabalho desenvolvido na disciplina de programação</p>
+    <div class="meio">
+      <img class="roda-pe-imagem" src="../images/cep_logo.png" alt="Logo">
+      <p class="roda-pe-texto">Colégio Estadual do Paraná</p>
+    </div>
+  </footer>
+</body>
+</html>

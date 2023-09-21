@@ -1,0 +1,108 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="G-06-pushbutton-led_circuit.css">
+  <link rel="shortcut icon" href="../images/cep_logo.png" type="image/x-icon">
+  <link rel="shortcut icon" href="../favicon.png" type="image/x-icon">
+  <title>Push button e Led</title>
+</head>
+<body>
+  <header class="cabecalho">
+
+    <div class="logo-title">
+        <img class="cabecalho-imagem" src="../!images/cep_logo.png" alt="Logo da Escola">
+        <h1>Circuito Led e Botão</h1>
+    </div>
+    
+    <div class="cabecalho-menu">
+      <ul class="cabecalho-lista">
+        <li class="cabecalho-lista-item"><a href="../G-06-main.html">Voltar -> Main page</a></li>
+        <li class="dropdown">
+          <a href="javascript:void(0)" class="dropbtn">Projetos</a>
+          <div class="dropdown-content">
+            <a target="_blank" href="../traffic-light_circuit/G-06-trafficlight_circuit.html">Trafic Light</a>
+            <a target="_blank" href="../megasemaforo/G-06-megasemaforo.html">Mega-semáforo</a>
+            <a target="_blank" href="../potenciometro/G-06-potenciometro.html">Potenciometro</a>
+            <a target="_blank" href="../timer/G-06-timer.html">Timer</a>
+            <a target="_blank" href="../centraldesegurança/G-06-cds.html">CDS</a>
+            <a target="_blank" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Em breve...</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+      <section id="Introdução">
+        <div class="corpo-div-conteudo">
+          <h2 class="corpo-titulo">Introdução</h2>
+          <p class="paragrafo-um">
+            Nossa prática realizada no dia 16/06/2023, foi uma montagem de um circuito botão de pressionar (pushbutton) e LED, onde utilizamos os seguintes componentes:
+            <ul>
+                <li>Arduino;</li>
+                <li>Protoboard;</li>
+                <li>Resistores;</li>
+                <li>Um LED amarelo;</li>
+                <li>Jumpers;</li>
+                <li>Bateria (laptop).</li>
+            </ul>           
+            Foi montado cuidadosamente para que não ocorresse nenhum erro.
+        </p>
+        </div>
+      </section>
+      <section id="Trabalho" class="trabalho">
+        <div class="corpo-div-conteudo">
+          <h2 class="corpo-titulo">A Montagem</h2>
+          
+          <div class="image-box">
+            <img class="phoyo" src="../!images/pushbutton-led_tinkercad.jpeg" alt="Imagem cartonizada do circuito botão-led">
+            <img class="phoyo" src="../!images/pushbutton-led_pic.jpg" alt="Foto do circuito botão-led">
+          </div>
+          
+          <p class="paragrafo-um">Logo abaixo segue os passos a serem tomados para se montar esse circuito</p>
+          <ul>
+            <li>0. Conecte o Arduino na protoboard.</li>
+            <li>1. Coloque os LEDs na protoboard, separando os lados positivos e negativos.</li>
+            <li>2. Use um resistor de 220 ohms para ligar os lados negativos dos LEDs à linha de terra da protoboard.</li>
+            <li>3. Conecte o pino positivo (5V) do Arduino à linha de alimentação (+) da protoboard.</li>
+            <li>4. Ligue um fio jumper da linha de terra (-) do Arduino à linha de terra da protoboard.</li>
+            <li>5. Conecte um fio jumper da linha de 5V do Arduino aos lados positivos dos LEDs.</li>
+            <li>6. Conecte um fio jumper do pino digital do Arduino a um dos terminais do botão.</li>
+            <li>7. Ligue um fio jumper da linha de terra da protoboard ao outro terminal do botão.</li>
+            <li>8. Conecte um fio jumper do resistor push a uma linha de 5V da protoboard.</li>
+            <li>9. Ligue um fio jumper da outra parte do resistor push a um pino digital do Arduino.</li>
+          </ul>
+
+          <p>Agora segue a foto do código (uma parte é em blocos, a outra em linguagem C++) que faz esse trem funcionar:</p>
+          <img src="../!images/code.png" alt="Imagem do código">
+        </div>
+
+        
+      </section>
+      
+      <section id="Conclusão">
+        <div class="corpo-div-conteudo">
+          <h2 class="corpo-titulo">Resultado final</h2>
+          <div class="video-box">
+              <h3 class="paragrafo-um">Olhe o vídeo do resultado final logo abaixo:</h3>
+              <video width="500px" controls>
+                <source src="../!videos/pushbutton-led_demo.mp4" type="video/mp4">
+                Your browser does not support the video tag. Tradução: seu navegador é uma merda, mermão!!
+              </video>
+          </div>  
+        </div>
+      </section>
+  </main>
+
+  <footer class="roda-pe">
+    <p class="fim">Trabalho desenvolvido na disciplina de programação</p>
+    <div class="meio">
+      <img class="roda-pe-imagem" src="../images/cep_logo.png" alt="Logo">
+      <p class="roda-pe-texto">Colégio Estadual do Paraná</p>
+    </div>
+  </footer>
+</body>
+</html>
